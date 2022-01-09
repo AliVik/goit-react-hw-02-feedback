@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import Statistics from "./components/Statistics ";
+import Statistics from "./components/Statistics";
 import FeedbackOptions from "./components/FeedbackOptions";
 import Section from "./components/Section";
 import Notification from "./components/Notification";
