@@ -1,22 +1,23 @@
-import * as styles from "./FeedbackOptionsStyles";
 import PropTypes from "prop-types";
+import {
+  FeedbackList,
+  FeedBackListItem,
+  Button,
+} from "./FeedbackOptionsStyles";
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <styles.FeedbackList>
+    <FeedbackList>
       {options.map((option) => {
         return (
-          <styles.FeedBackListItem key={option}>
-            <styles.Button
-              type="button"
-              onClick={() => onLeaveFeedback(option)}
-            >
+          <FeedBackListItem key={option}>
+            <Button type="button" onClick={() => onLeaveFeedback(option)}>
               {option}
-            </styles.Button>
-          </styles.FeedBackListItem>
+            </Button>
+          </FeedBackListItem>
         );
       })}
-    </styles.FeedbackList>
+    </FeedbackList>
   );
 }
 

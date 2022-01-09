@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import * as styles from "./SectionStyles";
+import { SectionElem, Header } from "./SectionStyles";
 
 export default function Section({ title, children }) {
   return (
-    <styles.SectionElem>
-      <styles.Header>{title}</styles.Header>
+    <SectionElem>
+      <Header>{title}</Header>
       {children}
-    </styles.SectionElem>
+    </SectionElem>
   );
 }
 

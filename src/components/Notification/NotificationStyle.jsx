@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const Notification = styled.p`
+export const NotificationStyled = styled.p`
   text-align: center;
 `;

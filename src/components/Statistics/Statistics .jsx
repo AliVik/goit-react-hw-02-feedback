@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import * as styles from "./StatisticsStyles";
+import { FeedbackList, FeedbackListItem } from "./StatisticsStyles";
 
 export default function Statistics({
   good,
@@ -10,15 +10,15 @@ export default function Statistics({
 }) {
   return (
     <>
-      <styles.FeedbackList>
-        <styles.FeedbackListItem>Good: {good}</styles.FeedbackListItem>
-        <styles.FeedbackListItem>Neutral: {neutral}</styles.FeedbackListItem>
-        <styles.FeedbackListItem>Bad: {bad}</styles.FeedbackListItem>
-        <styles.FeedbackListItem>Total: {total}</styles.FeedbackListItem>
-        <styles.FeedbackListItem>
+      <FeedbackList>
+        <FeedbackListItem>Good: {good}</FeedbackListItem>
+        <FeedbackListItem>Neutral: {neutral}</FeedbackListItem>
+        <FeedbackListItem>Bad: {bad}</FeedbackListItem>
+        <FeedbackListItem>Total: {total}</FeedbackListItem>
+        <FeedbackListItem>
           Positive feedback: {positivePercentage}%
-        </styles.FeedbackListItem>
-      </styles.FeedbackList>
+        </FeedbackListItem>
+      </FeedbackList>
     </>
   );
 }
